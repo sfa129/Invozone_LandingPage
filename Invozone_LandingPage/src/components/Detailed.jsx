@@ -44,7 +44,7 @@ export default function ServiceSelector() {
   const activeData = categories.find((c) => c.id === activeCategory);
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-4 sm:px-6 lg:px-45 w-full max-w-[1400px] mx-auto mb-10">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-4 sm:px-6 lg:px-45 w-full max-w-[1400px] mx-auto mb-30">
       {/* LEFT SIDE - CATEGORIES */}
       <div className="grid grid-cols-2 gap-4 overflow-x-auto lg:overflow-visible no-scrollbar lg:grid-cols-2 flex-shrink-0">
         {categories.map((cat) => (
