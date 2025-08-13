@@ -6,9 +6,15 @@ import IAMCard from "./components/IAMCard.jsx";
 import BlueSlide from "./components/BlueSlide.jsx";
 import FeedbackPage from './components/Feedback/FeedbackPage.jsx';
 import TabletPage from './components/TabletData/TabletPage.jsx';
+import CardSlider from "./components/Cards/CardSlider.jsx";
 
 function App() {
-
+  const cardData = [
+    { title: "Card 1", image: "https://picsum.photos/id/1015/600/400" },
+    { title: "Card 2", image: "https://picsum.photos/id/1016/600/400" },
+    { title: "Card 3", image: "https://picsum.photos/id/1018/600/400" },
+    { title: "Card 4", image: "https://picsum.photos/id/1020/600/400" },
+  ];
   return (
     <>
       <Navbar />
@@ -58,7 +64,7 @@ function App() {
 
         <BlueSlide />
         <FeedbackPage />
-         <div className="flex justify-center px-auto bg-white pt-15">
+        <div className="flex justify-center px-auto bg-white pt-15">
           <div className="flex justify-center px-4">
             <div className="w-full max-w-4xl flex flex-col items-center text-center p-4 sm:p-6">
               <h1 className="font-bold text-2xl sm:text-3xl lg:text-[35px] mb-5">
@@ -73,6 +79,9 @@ function App() {
 
         </div>
         <TabletPage />
+        <div className="container mx-auto">
+          <CardSlider cards={cardData} />
+        </div>
 
       </div>
     </>
