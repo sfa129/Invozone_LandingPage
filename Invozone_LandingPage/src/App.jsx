@@ -7,6 +7,7 @@ import BlueSlide from "./components/BlueSlide.jsx";
 import FeedbackPage from './components/Feedback/FeedbackPage.jsx';
 import TabletPage from './components/TabletData/TabletPage.jsx';
 import CardSlider from "./components/Cards/CardSlider.jsx";
+import CaseStudySection from "./components/CaseStudySection/CaseStudySection.jsx";
 
 function App() {
 
@@ -84,8 +85,8 @@ function App() {
           </div>
           <CardSlider />
         </div>
-
       </div>
+      <CaseStudySection />
     </>
   )
 }
