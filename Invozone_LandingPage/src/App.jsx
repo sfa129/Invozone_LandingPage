@@ -9,12 +9,7 @@ import TabletPage from './components/TabletData/TabletPage.jsx';
 import CardSlider from "./components/Cards/CardSlider.jsx";
 
 function App() {
-  const cardData = [
-    { title: "Card 1", image: "https://picsum.photos/id/1015/600/400" },
-    { title: "Card 2", image: "https://picsum.photos/id/1016/600/400" },
-    { title: "Card 3", image: "https://picsum.photos/id/1018/600/400" },
-    { title: "Card 4", image: "https://picsum.photos/id/1020/600/400" },
-  ];
+
   return (
     <>
       <Navbar />
@@ -80,7 +75,14 @@ function App() {
         </div>
         <TabletPage />
         <div className="container mx-auto">
-          <CardSlider cards={cardData} />
+          <div className="flex justify-center px-4">
+            <div className="w-full max-w-4xl flex flex-col items-center text-center p-4 sm:p-6">
+              <h1 className="font-bold text-2xl sm:text-3xl lg:text-[35px]">
+                Expertise in Software Development Across Multiple <span className="text-blue-500">Industries</span>
+              </h1>
+            </div>
+          </div>
+          <CardSlider />
         </div>
 
       </div>

@@ -4,7 +4,7 @@ export default function TabSection({ tabs }) {
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (
-        <section className="w-full bg-white py-16">
+        <section className="w-full bg-white mb-15">
             <div className="max-w-7xl mx-auto p-15 bg-gray-100 rounded-[25px]">
                 {/* Tabs */}
                 <div className="flex flex-wrap justify-center sm:justify-start gap-6 mb-10 border-b">
