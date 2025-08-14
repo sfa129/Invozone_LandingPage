@@ -8,7 +8,8 @@ import FeedbackPage from './components/Feedback/FeedbackPage.jsx';
 import TabletPage from './components/TabletData/TabletPage.jsx';
 import CardSlider from "./components/Cards/CardSlider.jsx";
 import CaseStudySection from "./components/CaseStudySection/CaseStudySection.jsx";
-import ContactSection from "./components/Contact/ContactSection.jsx";
+import ContactSection from "./components/ContactSection.jsx";
+import Footer from './components/Footer.jsx';
 
 function App() {
 
@@ -89,6 +90,7 @@ function App() {
       </div>
       <CaseStudySection />
       <ContactSection />
+      <Footer />
     </>
   )
 }
