@@ -16,7 +16,7 @@ export default function TabletPage() {
       ],
       ctaText: "View Details",
       ctaLink: "#",
-      videoUrl: "https://invozone-backend.s3.us-east-1.amazonaws.com/Infographic_02_a11ca74172.webm" // Replace with real link
+      videoUrl: "https://invozone-backend.s3.us-east-1.amazonaws.com/Infographic_02_a11ca74172.webm" 
     },
     {
       title: "Managed IT Systems",

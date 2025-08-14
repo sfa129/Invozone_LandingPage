@@ -16,28 +16,26 @@ export default function PartnersSection() {
 
   // Auto-scroll effect for < lg screens
   useEffect(() => {
-    const slider = sliderRef.current;
-    let scrollAmount = 0;
-    let scrollDirection = 1; // 1 = right, -1 = left
+  const slider = sliderRef.current;
+  let scrollAmount = 0;
 
-    const autoScroll = () => {
-      if (slider && window.innerWidth < 1024) {
-        scrollAmount += scrollDirection * 1.5; // Speed
-        if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
-          scrollDirection = -1;
-        } else if (scrollAmount <= 0) {
-          scrollDirection = 1;
-        }
-        slider.scrollTo({
-          left: scrollAmount,
-          behavior: "smooth",
-        });
+  const autoScroll = () => {
+    if (slider && window.innerWidth < 1024) {
+      scrollAmount += 1; // slower, smoother speed
+      if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+        scrollAmount = 0; // reset to start for continuous left → right loop
       }
-    };
+      slider.scrollTo({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
 
-    const interval = setInterval(autoScroll, -20); // smooth speed
-    return () => clearInterval(interval);
-  }, []);
+  const interval = setInterval(autoScroll, 100); 
+  return () => clearInterval(interval);
+}, []);
+
 
   return (
     <>
