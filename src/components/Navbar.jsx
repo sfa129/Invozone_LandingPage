@@ -69,7 +69,7 @@ const Navbar = () => {
             <button
               className={`relative flex items-center gap-2 px-4 py-2 rounded-full font-medium overflow-hidden group transition-colors duration-200 whitespace-nowrap ${isScrolled
                 ? "text-black hover:text-blue-600 border border-gray-400 bg-white"
-                : "text-white hover:text-gray-200 border border-blue-200 bg-blue-600"
+                : "text-white hover:text-gray-200 border border-blue-200 bg-transparent"
                 }`}
             >
               <p className="text-sm sm:text-base">Contact Us</p>
@@ -133,16 +133,15 @@ const Navbar = () => {
           ))}
           <li>
             <button
-              className={`relative flex items-center gap-2 px-5 py-2 rounded-full font-medium overflow-hidden group transition-colors duration-200 ${isScrolled
-                ? "text-black hover:text-blue-600 border  border-gray-400"
-                : "text-white hover:text-gray-200 border border-blue-200"
-                }`}
+              className="relative flex items-center gap-2 px-5 py-2 rounded-full font-medium overflow-hidden group transition-colors duration-200 text-black hover:text-blue-600 border border-gray-400 bg-white"
             >
-              <p>Contact US</p>
-              <div className="px-3 py-2 -my-[5px] -mr-[18px] ml-3 rounded-full bg-blue-500"><span className="transition-transform group-hover:animate-shake">➜</span></div>
-              {/* <span className="absolute inset-0 bg-blue-500 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span> */}
+              <p className="text-sm sm:text-base">Contact Us</p>
+              <div className="px-3 py-2 -my-[5px] -mr-[18px] ml-3 rounded-full bg-blue-500 flex-shrink-0">
+                <span className="transition-transform group-hover:animate-shake">➜</span>
+              </div>
             </button>
           </li>
+
         </ul>
       </div>
     </>
